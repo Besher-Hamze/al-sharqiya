@@ -4,9 +4,9 @@ Website, admin dashboard, and REST API for Al-Sharqiya (est. 1986, Al Ain, UAE).
 
 | App | Stack | Port |
 |---|---|---|
-| `sharqiya_website` | Next.js 16, next-intl, Tailwind v4 | 3000 |
-| `sharqiya_dashboard` | Next.js 16, TanStack Query, Zustand | 3001 |
-| `sharqiya_backend` | NestJS 11, MongoDB, JWT | 4000 |
+| `sharqiya_website` | Next.js 16, next-intl, Tailwind v4 | **3018** |
+| `sharqiya_dashboard` | Next.js 16, TanStack Query, Zustand | **3019** |
+| `sharqiya_backend` | NestJS 11, MongoDB, JWT | **3020** |
 
 Languages: English (`/en`) and Arabic (`/ar`, RTL). Brand gold: `#DAAD49`.
 
@@ -40,11 +40,21 @@ Quote `ADMIN_PASSWORD` in `.env` — an unquoted `#` starts a comment.
 
 | | |
 |---|---|
-| Website | http://localhost:3000/en |
-| Dashboard | http://localhost:3001 |
-| API | http://localhost:4000/api/v1 |
-| Swagger | http://localhost:4000/api/docs |
+| Website | http://localhost:3018/en |
+| Dashboard | http://localhost:3019 |
+| API | http://localhost:3020/api/v1 |
+| Swagger | http://localhost:3020/api/docs |
 | Admin login | `admin@alsharqiya.ae` / `Sharqiya#2026` |
+
+## Production (PM2, no domain)
+
+See [DEPLOY.md](DEPLOY.md). From the repo root after build:
+
+```bash
+pm2 start ecosystem.config.cjs
+pm2 save
+pm2 startup
+```
 
 ## Docker Compose
 
@@ -57,10 +67,10 @@ docker compose --profile seed run --rm seed
 
 | | |
 |---|---|
-| Website (direct) | http://localhost:3000 |
+| Website (direct) | http://localhost:3018 |
 | Website (NGINX) | http://localhost |
-| Dashboard | http://localhost:3001 or http://localhost:8081 |
-| API | http://localhost:4000 |
+| Dashboard | http://localhost:3019 or http://localhost:8081 |
+| API | http://localhost:3020 |
 
 Browser-facing `NEXT_PUBLIC_*` URLs are baked at **image build** time. After changing them, rebuild the website and dashboard images.
 
@@ -74,6 +84,7 @@ al-sharqiya/
 ├── sharqiya_website/     Public site (SSR / ISR)
 ├── sharqiya_dashboard/   Admin CMS
 ├── nginx/                Reverse proxy
+├── ecosystem.config.cjs  PM2 (all three apps)
 ├── docker-compose.yml
 └── ARCHITECTURE.md
 ```

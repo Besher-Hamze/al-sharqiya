@@ -15,7 +15,7 @@ function backendImagePatterns(): NonNullable<
     process.env.NEXT_PUBLIC_ASSET_URL,
     process.env.NEXT_PUBLIC_API_URL,
     process.env.API_URL,
-    "http://localhost:4000",
+    "http://localhost:3020",
   ].filter(Boolean) as string[];
 
   const patterns: NonNullable<NextConfig["images"]>["remotePatterns"] = [];
@@ -44,13 +44,13 @@ function backendImagePatterns(): NonNullable<
       {
         protocol: "http",
         hostname: "localhost",
-        port: "4000",
+        port: "3020",
         pathname: "/uploads/**",
       },
       {
         protocol: "http",
         hostname: "127.0.0.1",
-        port: "4000",
+        port: "3020",
         pathname: "/uploads/**",
       },
     ];

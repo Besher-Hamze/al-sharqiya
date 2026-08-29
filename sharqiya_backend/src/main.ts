@@ -23,7 +23,7 @@ async function bootstrap(): Promise<void> {
 
   const corsOrigins = (
     config.get<string>('CORS_ORIGINS') ??
-    'http://localhost:3000,http://localhost:3001'
+    'http://localhost:3018,http://localhost:3019'
   )
     .split(',')
     .map((origin) => origin.trim())
@@ -58,8 +58,8 @@ async function bootstrap(): Promise<void> {
     SwaggerModule.createDocument(app, swaggerConfig),
   );
 
-  const port = config.get<number>('PORT') ?? 4000;
-  await app.listen(port);
+  const port = config.get<number>('PORT') ?? 3020;
+  await app.listen(port, '0.0.0.0');
   // eslint-disable-next-line no-console
   console.log(
     `API running on http://localhost:${port}/api/v1 (docs: /api/docs)`,

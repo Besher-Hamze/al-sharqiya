@@ -3,4 +3,5 @@ dist/
 coverage/
 .env
 *.log
+logs/
 uploads/media/20*/

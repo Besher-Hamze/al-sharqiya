@@ -16,9 +16,9 @@ Branches in Abu Dhabi, Dubai, Al Ain, and Ajman. Paints division trades as Art C
 
 ```
 al-sharqiya/
-├── sharqiya_backend/      NestJS 11 REST API (port 4000)
-├── sharqiya_website/      Next.js public website (port 3000) — en/ar, SSR/ISR, SEO
-├── sharqiya_dashboard/    Next.js admin dashboard (port 3001) — CSR + TanStack Query
+├── sharqiya_backend/      NestJS 11 REST API (port 3020)
+├── sharqiya_website/      Next.js public website (port 3018) — en/ar, SSR/ISR, SEO
+├── sharqiya_dashboard/    Next.js admin dashboard (port 3019) — CSR + TanStack Query
 ├── nginx/                 Reverse proxy (Compose)
 ├── docker-compose.yml
 ├── .env.example
@@ -138,7 +138,7 @@ RBAC (enforced on the API):
 
 - Login payload user shape: `{ id, email, name, role }` (not `userId`). JWT `/auth/me` uses `userId`.
 - Refresh cookie path: `/api/v1/auth`. `sameSite=lax`. `secure` follows `COOKIE_SECURE` or `NODE_ENV=production`.
-- CORS allowlist includes `http://localhost:3000` and `http://localhost:3001` with credentials.
+- CORS allowlist includes `http://localhost:3018` and `http://localhost:3019` with credentials.
 
 ## 10. Security
 

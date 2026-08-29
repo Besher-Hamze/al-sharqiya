@@ -23,43 +23,43 @@ services:
     env_file:
       - .env
     environment:
-      PORT: 4000
+      PORT: 3020
       MONGODB_URI: mongodb://mongo:27017/sharqiya
       COOKIE_SECURE: ${COOKIE_SECURE:-false}
-      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:3000,http://localhost:3001,http://localhost,http://localhost:8081}
+      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:3018,http://localhost:3019,http://localhost,http://localhost:8081}
     volumes:
       - ./sharqiya_backend/uploads:/app/uploads
     ports:
-      - "4000:4000"
+      - "3020:3020"
 
   website:
     build:
       context: ./sharqiya_website
       args:
-        NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL:-http://localhost:4000}
-        NEXT_PUBLIC_ASSET_URL: ${NEXT_PUBLIC_ASSET_URL:-http://localhost:4000}
-        NEXT_PUBLIC_SITE_URL: ${NEXT_PUBLIC_SITE_URL:-http://localhost:3000}
-        API_URL: http://backend:4000
+        NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL:-http://localhost:3020}
+        NEXT_PUBLIC_ASSET_URL: ${NEXT_PUBLIC_ASSET_URL:-http://localhost:3020}
+        NEXT_PUBLIC_SITE_URL: ${NEXT_PUBLIC_SITE_URL:-http://localhost:3018}
+        API_URL: http://backend:3020
     restart: unless-stopped
     depends_on:
       - backend
     environment:
-      API_URL: http://backend:4000
+      API_URL: http://backend:3020
     ports:
-      - "3000:3000"
+      - "3018:3018"
 
   dashboard:
     build:
       context: ./sharqiya_dashboard
       args:
-        NEXT_PUBLIC_API_URL: ${DASHBOARD_API_URL:-http://localhost:4000/api/v1}
-        NEXT_PUBLIC_ASSET_URL: ${NEXT_PUBLIC_ASSET_URL:-http://localhost:4000}
-        NEXT_PUBLIC_WEBSITE_URL: ${NEXT_PUBLIC_WEBSITE_URL:-http://localhost:3000/en}
+        NEXT_PUBLIC_API_URL: ${DASHBOARD_API_URL:-http://localhost:3020/api/v1}
+        NEXT_PUBLIC_ASSET_URL: ${NEXT_PUBLIC_ASSET_URL:-http://localhost:3020}
+        NEXT_PUBLIC_WEBSITE_URL: ${NEXT_PUBLIC_WEBSITE_URL:-http://localhost:3018/en}
     restart: unless-stopped
     depends_on:
       - backend
     ports:
-      - "3001:3001"
+      - "3019:3019"
 
   nginx:
     image: nginx:1.27-alpine

@@ -7,7 +7,7 @@ const API_ORIGIN = (
   process.env.NEXT_PUBLIC_ASSET_URL ??
   process.env.NEXT_PUBLIC_API_URL ??
   process.env.API_URL ??
-  "http://localhost:4000"
+  "http://localhost:3020"
 ).replace(/\/$/, "");
 
 export function mediaUrl(src: string | undefined | null): string {
