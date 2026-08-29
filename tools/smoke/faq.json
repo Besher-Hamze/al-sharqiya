@@ -1,0 +1,5 @@
+{
+  "question": { "en": "Smoke test question?", "ar": "سؤال اختبار؟" },
+  "answer": { "en": "Smoke test answer.", "ar": "جواب الاختبار." },
+  "order": 99
+}

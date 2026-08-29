@@ -1,0 +1,93 @@
+services:
+  mongo:
+    image: mongo:7
+    restart: unless-stopped
+    volumes:
+      - sharqiya_mongo:/data/db
+    ports:
+      - "27017:27017"
+    healthcheck:
+      test: ["CMD", "mongosh", "--quiet", "--eval", "db.adminCommand('ping').ok"]
+      interval: 10s
+      timeout: 5s
+      retries: 8
+      start_period: 20s
+
+  backend:
+    build:
+      context: ./sharqiya_backend
+    restart: unless-stopped
+    depends_on:
+      mongo:
+        condition: service_healthy
+    env_file:
+      - .env
+    environment:
+      PORT: 4000
+      MONGODB_URI: mongodb://mongo:27017/sharqiya
+      COOKIE_SECURE: ${COOKIE_SECURE:-false}
+      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:3000,http://localhost:3001,http://localhost,http://localhost:8081}
+    volumes:
+      - ./sharqiya_backend/uploads:/app/uploads
+    ports:
+      - "4000:4000"
+
+  website:
+    build:
+      context: ./sharqiya_website
+      args:
+        NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL:-http://localhost:4000}
+        NEXT_PUBLIC_ASSET_URL: ${NEXT_PUBLIC_ASSET_URL:-http://localhost:4000}
+        NEXT_PUBLIC_SITE_URL: ${NEXT_PUBLIC_SITE_URL:-http://localhost:3000}
+        API_URL: http://backend:4000
+    restart: unless-stopped
+    depends_on:
+      - backend
+    environment:
+      API_URL: http://backend:4000
+    ports:
+      - "3000:3000"
+
+  dashboard:
+    build:
+      context: ./sharqiya_dashboard
+      args:
+        NEXT_PUBLIC_API_URL: ${DASHBOARD_API_URL:-http://localhost:4000/api/v1}
+        NEXT_PUBLIC_ASSET_URL: ${NEXT_PUBLIC_ASSET_URL:-http://localhost:4000}
+        NEXT_PUBLIC_WEBSITE_URL: ${NEXT_PUBLIC_WEBSITE_URL:-http://localhost:3000/en}
+    restart: unless-stopped
+    depends_on:
+      - backend
+    ports:
+      - "3001:3001"
+
+  nginx:
+    image: nginx:1.27-alpine
+    restart: unless-stopped
+    depends_on:
+      - website
+      - dashboard
+      - backend
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+    ports:
+      - "80:80"
+      - "8081:8081"
+
+  seed:
+    profiles: ["seed"]
+    build:
+      context: ./sharqiya_backend
+    depends_on:
+      mongo:
+        condition: service_healthy
+    env_file:
+      - .env
+    environment:
+      MONGODB_URI: mongodb://mongo:27017/sharqiya
+    volumes:
+      - ./sharqiya_backend/uploads:/app/uploads
+    command: ["node", "dist/seed/seed.js"]
+
+volumes:
+  sharqiya_mongo:

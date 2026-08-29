@@ -1,0 +1,128 @@
+[
+  {
+    "page": 1,
+    "file": "p01_i1_x22.png",
+    "xref": 22,
+    "ext": "png",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 494834
+  },
+  {
+    "page": 2,
+    "file": "p02_i1_x28.jpeg",
+    "xref": 28,
+    "ext": "jpeg",
+    "width": 2800,
+    "height": 2100,
+    "bytes": 1181691
+  },
+  {
+    "page": 2,
+    "file": "p02_i2_x29.jpeg",
+    "xref": 29,
+    "ext": "jpeg",
+    "width": 3680,
+    "height": 2456,
+    "bytes": 1765673
+  },
+  {
+    "page": 3,
+    "file": "p03_i1_x34.jpeg",
+    "xref": 34,
+    "ext": "jpeg",
+    "width": 4213,
+    "height": 2809,
+    "bytes": 4821630
+  },
+  {
+    "page": 4,
+    "file": "p04_i1_x38.jpeg",
+    "xref": 38,
+    "ext": "jpeg",
+    "width": 720,
+    "height": 1280,
+    "bytes": 298659
+  },
+  {
+    "page": 5,
+    "file": "p05_i1_x43.jpeg",
+    "xref": 43,
+    "ext": "jpeg",
+    "width": 960,
+    "height": 1280,
+    "bytes": 281596
+  },
+  {
+    "page": 6,
+    "file": "p06_i1_x48.jpeg",
+    "xref": 48,
+    "ext": "jpeg",
+    "width": 2808,
+    "height": 3744,
+    "bytes": 3345022
+  },
+  {
+    "page": 6,
+    "file": "p06_i2_x49.jpeg",
+    "xref": 49,
+    "ext": "jpeg",
+    "width": 3744,
+    "height": 2808,
+    "bytes": 3306584
+  },
+  {
+    "page": 7,
+    "file": "p07_i1_x53.jpeg",
+    "xref": 53,
+    "ext": "jpeg",
+    "width": 960,
+    "height": 1280,
+    "bytes": 474726
+  },
+  {
+    "page": 7,
+    "file": "p07_i2_x54.jpeg",
+    "xref": 54,
+    "ext": "jpeg",
+    "width": 960,
+    "height": 1280,
+    "bytes": 370451
+  },
+  {
+    "page": 8,
+    "file": "p08_i1_x58.jpeg",
+    "xref": 58,
+    "ext": "jpeg",
+    "width": 960,
+    "height": 1280,
+    "bytes": 346501
+  },
+  {
+    "page": 8,
+    "file": "p08_i2_x59.jpeg",
+    "xref": 59,
+    "ext": "jpeg",
+    "width": 960,
+    "height": 1280,
+    "bytes": 346282
+  },
+  {
+    "page": 9,
+    "file": "p09_i1_x63.jpeg",
+    "xref": 63,
+    "ext": "jpeg",
+    "width": 960,
+    "height": 1280,
+    "bytes": 270396
+  },
+  {
+    "page": 9,
+    "file": "p09_i2_x64.jpeg",
+    "xref": 64,
+    "ext": "jpeg",
+    "width": 960,
+    "height": 1280,
+    "bytes": 267370
+  }
+]

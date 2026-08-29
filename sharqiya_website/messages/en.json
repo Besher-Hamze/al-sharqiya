@@ -1,0 +1,235 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "projects": "Projects",
+    "gallery": "Gallery",
+    "about": "About",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "quote": "Request a quote",
+    "switchLocale": "العربية",
+    "menu": "Open menu",
+    "closeMenu": "Close menu",
+    "callUs": "Call us"
+  },
+  "home": {
+    "servicesEyebrow": "What we do",
+    "servicesTitle": "Six trades, one contractor",
+    "servicesSubtitle": "Gypsum and GRC from our own factory, plus flooring, painting, waterproofing and decorative finishes applied by our own crews.",
+    "servicesCta": "All services",
+    "projectsEyebrow": "Selected work",
+    "projectsTitle": "Projects you can walk on",
+    "projectsSubtitle": "Bus depots, malls, hotels, offices and villas across four emirates — delivered while they stayed in service.",
+    "projectsCta": "All projects",
+    "valuesEyebrow": "Why Al-Sharqiya",
+    "valuesTitle": "Forty years of getting it right the first time",
+    "processEyebrow": "How we work",
+    "processTitle": "From site survey to handover",
+    "processSubtitle": "A simple, four-step route that keeps the specification honest and the programme predictable.",
+    "processStep": "Step {number}",
+    "galleryEyebrow": "Gallery",
+    "galleryTitle": "See the finish up close",
+    "galleryCta": "Open the gallery",
+    "faqEyebrow": "Questions",
+    "faqTitle": "Answers before you ask",
+    "faqCta": "All questions",
+    "learnMore": "Learn more"
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "Manufacturing, supply and application — handled by one contractor so the specification, the workmanship and the warranty stay in one place.",
+    "featuresTitle": "What the service covers",
+    "specsTitle": "At a glance",
+    "galleryTitle": "From our projects",
+    "relatedProjectsTitle": "Projects in this service",
+    "otherServicesTitle": "Other services",
+    "ctaTitle": "Need this on your project?",
+    "ctaBody": "Send us the drawings, the area, or a photo of the existing surface. We will tell you what system it needs.",
+    "ctaButton": "Request a quote",
+    "viewService": "View service",
+    "prev": "Previous",
+    "next": "Next"
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Government authorities, mall and hotel operators, industrial owners and private clients — a selection of completed work across the UAE.",
+    "filterAll": "All projects",
+    "client": "Client",
+    "location": "Location",
+    "area": "Area",
+    "service": "Service",
+    "scopeTitle": "Scope of works",
+    "galleryTitle": "Project gallery",
+    "relatedTitle": "Related projects",
+    "viewProject": "View project",
+    "empty": "No projects in this category yet.",
+    "ctaTitle": "Have a similar project?",
+    "ctaBody": "We will survey the site and put a written specification and price in front of you.",
+    "ctaButton": "Request a quote"
+  },
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "Floors, markings, facades, ceilings and decorative elements from projects across Abu Dhabi, Dubai, Al Ain and Ajman.",
+    "photoCount": "{count, plural, one {# photo} other {# photos}}",
+    "viewAlbum": "View album",
+    "close": "Close",
+    "previous": "Previous image",
+    "next": "Next image"
+  },
+  "about": {
+    "title": "About us",
+    "milestonesEyebrow": "Our story",
+    "milestonesTitle": "Four decades, step by step",
+    "branchesEyebrow": "Where we are",
+    "branchesTitle": "Four emirates, one team",
+    "statsTitle": "Al-Sharqiya in numbers",
+    "ctaTitle": "Work with us",
+    "ctaBody": "Tell us what you are building and we will tell you how we would finish it.",
+    "ctaButton": "Request a quote"
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "subtitle": "Scope, coverage, quotations and how we work in buildings that cannot close.",
+    "stillAsking": "Still have a question?",
+    "stillAskingBody": "Call us, send a WhatsApp message or use the contact form — we answer specification questions before you commit to anything.",
+    "stillAskingButton": "Contact us"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Head office in Al Ain, with branches in Abu Dhabi, Dubai and Ajman. Reach whichever is nearest to your site.",
+    "formTitle": "Send us a message",
+    "formSubtitle": "We reply to enquiries within one working day.",
+    "branchesTitle": "Our branches",
+    "hoursTitle": "Opening hours",
+    "closed": "Closed",
+    "detailsTitle": "Direct contact",
+    "phone": "Phone",
+    "phoneAlt": "Alternative phone",
+    "whatsapp": "WhatsApp",
+    "email": "Email",
+    "headOffice": "Head office",
+    "fields": {
+      "name": "Full name",
+      "email": "Email address",
+      "phone": "Phone number",
+      "subject": "Subject",
+      "message": "Your message",
+      "messagePlaceholder": "Tell us about the project, the area involved and your timeline."
+    },
+    "submit": "Send message",
+    "submitting": "Sending…",
+    "successTitle": "Message sent",
+    "successBody": "Thank you. We have your message and will be in touch shortly.",
+    "errorBody": "Something went wrong sending your message. Please try again, or reach us on WhatsApp.",
+    "sendAnother": "Send another message",
+    "validation": {
+      "nameRequired": "Please enter your name.",
+      "nameShort": "Please enter at least 2 characters.",
+      "emailInvalid": "Please enter a valid email address.",
+      "subjectRequired": "Please enter a subject.",
+      "messageRequired": "Please enter a message.",
+      "messageShort": "Please give us a little more detail (at least 10 characters)."
+    }
+  },
+  "quote": {
+    "title": "Request a quote",
+    "subtitle": "Tell us the service, the emirate and the approximate area. For anything beyond a small job we prefer to survey the site before pricing.",
+    "formTitle": "Project details",
+    "servicesLabel": "Which services do you need?",
+    "servicesHint": "Select all that apply.",
+    "fields": {
+      "name": "Full name",
+      "phone": "Phone number",
+      "email": "Email address",
+      "company": "Company",
+      "propertyType": "Property type",
+      "emirate": "Emirate",
+      "area": "Approximate area",
+      "areaPlaceholder": "e.g. 1,200 m²",
+      "message": "Project details",
+      "messagePlaceholder": "Describe the surface, its current condition, and when you would like the work done."
+    },
+    "optional": "optional",
+    "propertyTypes": {
+      "residential": "Residential",
+      "commercial": "Commercial",
+      "industrial": "Industrial",
+      "government": "Government",
+      "other": "Other"
+    },
+    "submit": "Send request",
+    "submitting": "Sending…",
+    "successTitle": "Request received",
+    "successBody": "Thank you. Our team will review the details and come back to you with next steps, usually within one working day.",
+    "errorBody": "Something went wrong sending your request. Please try again, or reach us on WhatsApp.",
+    "sendAnother": "Send another request",
+    "assurances": {
+      "survey": "Free site survey",
+      "surveyBody": "We measure and test the substrate before quoting.",
+      "written": "Written specification",
+      "writtenBody": "System, build-up and programme, not just a number.",
+      "single": "One responsible party",
+      "singleBody": "We supply the material and apply it ourselves."
+    },
+    "validation": {
+      "nameRequired": "Please enter your name.",
+      "nameShort": "Please enter at least 2 characters.",
+      "phoneRequired": "Please enter a phone number we can reach you on.",
+      "phoneShort": "Please enter a valid phone number.",
+      "emailInvalid": "Please enter a valid email address."
+    }
+  },
+  "footer": {
+    "explore": "Explore",
+    "services": "Services",
+    "legal": "Legal",
+    "contact": "Contact",
+    "rights": "All rights reserved.",
+    "established": "Established {year}"
+  },
+  "common": {
+    "notFoundTitle": "Page not found",
+    "notFoundBody": "The page you are looking for has moved or never existed.",
+    "backHome": "Back to homepage",
+    "loading": "Loading…",
+    "whatsapp": "Chat on WhatsApp",
+    "readMore": "Read more",
+    "backTo": "Back to {label}",
+    "requiredField": "Required"
+  },
+  "meta": {
+    "home": {
+      "title": "Al-Sharqiya Gypsum & GRC Group | Finishing the UAE since 1986",
+      "description": "Gypsum and GRC manufacturing, epoxy flooring, painting, waterproofing and decorative coatings across Abu Dhabi, Dubai, Al Ain and Ajman. Established 1986."
+    },
+    "services": {
+      "title": "Services",
+      "description": "Gypsum and GRC, epoxy and industrial flooring, painting, EV parking bay marking, waterproofing and micro cement — supplied and applied across the UAE."
+    },
+    "projects": {
+      "title": "Projects",
+      "description": "Completed projects for the RTA, TAQA-instructed EV charging bays, malls, hotels, warehouses and villas across Abu Dhabi, Dubai, Al Ain and Ajman."
+    },
+    "gallery": {
+      "title": "Gallery",
+      "description": "Photographs of completed flooring, line marking, painting, gypsum and GRC work by Al-Sharqiya across the United Arab Emirates."
+    },
+    "about": {
+      "title": "About us",
+      "description": "Al-Sharqiya was established in 1986 in Al Ain as a gypsum and GRC manufacturer and now delivers flooring, painting and waterproofing across four emirates."
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "description": "Which emirates we cover, how quotations work, whether we supply and install, and how we work in occupied buildings."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Contact Al-Sharqiya Gypsum & GRC Group. Head office in Al Ain with branches in Abu Dhabi, Dubai and Ajman."
+    },
+    "quote": {
+      "title": "Request a quote",
+      "description": "Request a quotation for gypsum, GRC, epoxy flooring, painting, line marking, waterproofing or decorative coatings anywhere in the UAE."
+    }
+  }
+}

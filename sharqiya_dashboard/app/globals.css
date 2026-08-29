@@ -1,0 +1,87 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  /* Brand gold — sampled from the Al-Sharqiya logo (#daad49). */
+  --color-brand-50: #fdfaf1;
+  --color-brand-100: #faf2dc;
+  --color-brand-200: #f4e3b3;
+  --color-brand-300: #eccd82;
+  --color-brand-400: #e3b658;
+  --color-brand-500: #daad49;
+  --color-brand-600: #c1913a;
+  --color-brand-700: #9e7231;
+  --color-brand-800: #7d5a2e;
+  --color-brand-900: #664a29;
+
+  /* Graphite — the dark counterweight, used for the sidebar and CTAs. */
+  --color-graphite-50: #f6f7f8;
+  --color-graphite-100: #eceef1;
+  --color-graphite-200: #d6dade;
+  --color-graphite-300: #b2bac2;
+  --color-graphite-400: #87919c;
+  --color-graphite-500: #68727d;
+  --color-graphite-600: #525b65;
+  --color-graphite-700: #414951;
+  --color-graphite-800: #2f353b;
+  --color-graphite-900: #1f2429;
+  --color-graphite-950: #12161a;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-mono-stack), ui-monospace, monospace;
+}
+
+body {
+  background-color: var(--color-zinc-50);
+  color: var(--color-zinc-900);
+  font-family: var(--font-sans);
+}
+
+html[dir="rtl"] body {
+  font-family: var(--font-arabic), var(--font-sans);
+}
+
+::selection {
+  background-color: var(--color-brand-100);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-zinc-300) transparent;
+}
+
+.brand-gradient {
+  background-image: linear-gradient(
+    135deg,
+    var(--color-brand-500),
+    var(--color-brand-700)
+  );
+}
+
+.brand-gradient-text {
+  background-image: linear-gradient(
+    135deg,
+    var(--color-brand-600),
+    var(--color-brand-800)
+  );
+  background-clip: text;
+  color: transparent;
+}
+
+/* Native date/time pickers inherit dark mode otherwise */
+input[type="date"],
+input[type="time"] {
+  color-scheme: light;
+}
+
+/* Hide the number input spinners; order fields are typed, not nudged */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}

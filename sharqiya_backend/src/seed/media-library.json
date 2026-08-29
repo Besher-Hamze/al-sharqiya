@@ -1,0 +1,418 @@
+[
+  {
+    "key": "logo-mark",
+    "filename": "logo-mark.webp",
+    "url": "/uploads/media/library/logo-mark.webp",
+    "thumbUrl": "/uploads/media/library/logo-mark.thumb.webp",
+    "mimeType": "image/webp",
+    "size": 22834,
+    "width": 512,
+    "height": 512,
+    "alt": {
+      "en": "Al-Sharqiya logo mark",
+      "ar": "شعار الشرقية"
+    },
+    "folder": "media/library",
+    "tag": "brand"
+  },
+  {
+    "key": "gypsum-ceiling-installation",
+    "filename": "gypsum-ceiling-installation.webp",
+    "url": "/uploads/media/library/gypsum-ceiling-installation.webp",
+    "thumbUrl": "/uploads/media/library/gypsum-ceiling-installation.thumb.webp",
+    "mimeType": "image/webp",
+    "size": 164444,
+    "width": 1920,
+    "height": 1280,
+    "alt": {
+      "en": "Technician fixing gypsum board to a suspended ceiling frame",
+      "ar": "فني يقوم بتثبيت ألواح الجبس على هيكل السقف المستعار"
+    },
+    "folder": "media/library",
+    "tag": "gypsum"
+  },
+  {
+    "key": "grc-decorative-wave-panel",
+    "filename": "grc-decorative-wave-panel.webp",
+    "url": "/uploads/media/library/grc-decorative-wave-panel.webp",
+    "thumbUrl": "/uploads/media/library/grc-decorative-wave-panel.thumb.webp",
+    "mimeType": "image/webp",
+    "size": 90954,
+    "width": 1920,
+    "height": 1440,
+    "alt": {
+      "en": "Three-dimensional decorative GRC wave wall panel",
+      "ar": "لوح جداري مموج ثلاثي الأبعاد من الجي آر سي"
+    },
+    "folder": "media/library",
+    "tag": "gypsum"
+  },
+  {
+    "key": "painter-applying-roller-coat",
+    "filename": "painter-applying-roller-coat.webp",
+    "url": "/uploads/media/library/painter-applying-roller-coat.webp",
+    "thumbUrl": "/uploads/media/library/painter-applying-roller-coat.thumb.webp",
+    "mimeType": "image/webp",
+    "size": 85962,
+    "width": 1920,
+    "height": 1281,
+    "alt": {
+      "en": "Painter applying a roller coat to an interior wall",
+      "ar": "دهّان يقوم بطلاء حائط داخلي بالرول"
+    },
+    "folder": "media/library",
+    "tag": "painting"
+  },
+  {
+    "key": "interior-hall-painting-works",
+    "filename": "interior-hall-painting-works.webp",
+    "url": "/uploads/media/library/interior-hall-painting-works.webp",
+    "thumbUrl": "/uploads/media/library/interior-hall-painting-works.thumb.webp",
+    "mimeType": "image/webp",
+    "size": 137516,
+    "width": 960,
+    "height": 1280,
+    "alt": {
+      "en": "Interior hall painting works with access scaffolding",
+      "ar": "أعمال دهان قاعة داخلية باستخدام السقالات"
+    },
+    "folder": "media/library",
+    "tag": "painting"
+  },
+  {
+    "key": "ev-parking-epoxy-bays-daylight",
+    "filename": "ev-parking-epoxy-bays-daylight.webp",
+    "url": "/uploads/media/library/ev-parking-epoxy-bays-daylight.webp",
+    "thumbUrl": "/uploads/media/library/ev-parking-epoxy-bays-daylight.thumb.webp",
+    "mimeType": "image/webp",
+    "size": 193370,
+    "width": 960,
+    "height": 1280,
+    "alt": {
+      "en": "Green epoxy electric vehicle charging bays at daylight",
+      "ar": "مواقف شحن السيارات الكهربائية بطلاء إيبوكسي أخضر في النهار"
+    },
+    "folder": "media/library",
+    "tag": "ev-parking"
+  },
+  {
+    "key": "ev-parking-epoxy-bays-sunset",
+    "filename": "ev-parking-epoxy-bays-sunset.webp",
+    "url": "/uploads/media/library/ev-parking-epoxy-bays-sunset.webp",
+    "thumbUrl": "/uploads/media/library/ev-parking-epoxy-bays-sunset.thumb.webp",
+    "mimeType": "image/webp",
+    "size": 166832,
+    "width": 960,
+    "height": 1280,
+    "alt": {
+      "en": "Newly coated electric vehicle parking bays at sunset",
+      "ar": "مواقف السيارات الكهربائية حديثة الطلاء عند الغروب"
+    },
+    "folder": "media/library",
+    "tag": "ev-parking"
+  },
+  {
+    "key": "ev-parking-canopy-night",
+    "filename": "ev-parking-canopy-night.webp",
+    "url": "/uploads/media/library/ev-parking-canopy-night.webp",
+    "thumbUrl": "/uploads/media/library/ev-parking-canopy-night.thumb.webp",
+    "mimeType": "image/webp",
+    "size": 283466,
+    "width": 1920,
+    "height": 1440,
+    "alt": {
+      "en": "Shaded electric vehicle charging court finished in green epoxy at night",
+      "ar": "ساحة شحن السيارات الكهربائية المظللة بطلاء إيبوكسي أخضر ليلاً"
+    },
+    "folder": "media/library",
+    "tag": "ev-parking"
+  },
+  {
+    "key": "office-building-exterior-painting",
+    "filename": "office-building-exterior-painting.webp",
+    "url": "/uploads/media/library/office-building-exterior-painting.webp",
+    "thumbUrl": "/uploads/media/library/office-building-exterior-painting.thumb.webp",
+    "mimeType": "image/webp",
+    "size": 108470,
+    "width": 960,
+    "height": 1280,
+    "alt": {
+      "en": "Exterior painting of a multi-storey office building from a suspended cradle",
+      "ar": "دهان الواجهة الخارجية لمبنى مكاتب متعدد الطوابق باستخدام منصة معلقة"
+    },
+    "folder": "media/library",
+    "tag": "painting"
+  },
+  {
+    "key": "bus-depot-epoxy-walkway",
+    "filename": "bus-depot-epoxy-walkway.webp",
+    "url": "/uploads/media/library/bus-depot-epoxy-walkway.webp",
+    "thumbUrl": "/uploads/media/library/bus-depot-epoxy-walkway.thumb.webp",
+    "mimeType": "image/webp",
+    "size": 115794,
+    "width": 720,
+    "height": 1280,
+    "alt": {
+      "en": "Green epoxy pedestrian walkway with yellow lining inside a bus depot",
+      "ar": "ممر للمشاة بطلاء إيبوكسي أخضر مع خطوط صفراء داخل مستودع الحافلات"
+    },
+    "folder": "media/library",
+    "tag": "flooring"
+  },
+  {
+    "key": "workshop-bay-line-marking",
+    "filename": "workshop-bay-line-marking.webp",
+    "url": "/uploads/media/library/workshop-bay-line-marking.webp",
+    "thumbUrl": "/uploads/media/library/workshop-bay-line-marking.thumb.webp",
+    "mimeType": "image/webp",
+    "size": 135064,
+    "width": 960,
+    "height": 1280,
+    "alt": {
+      "en": "Numbered workshop service bay with yellow epoxy line marking",
+      "ar": "خليج خدمة مرقّم في الورشة مع خطوط إيبوكسي صفراء"
+    },
+    "folder": "media/library",
+    "tag": "flooring"
+  },
+  {
+    "key": "warehouse-polished-floor",
+    "filename": "warehouse-polished-floor.webp",
+    "url": "/uploads/media/library/warehouse-polished-floor.webp",
+    "thumbUrl": "/uploads/media/library/warehouse-polished-floor.thumb.webp",
+    "mimeType": "image/webp",
+    "size": 180696,
+    "width": 960,
+    "height": 1280,
+    "alt": {
+      "en": "Large warehouse hall with a polished seamless floor finish",
+      "ar": "قاعة مستودع كبيرة بأرضية ملساء مصقولة"
+    },
+    "folder": "media/library",
+    "tag": "flooring"
+  },
+  {
+    "key": "depot-floor-yellow-lining",
+    "filename": "depot-floor-yellow-lining.webp",
+    "url": "/uploads/media/library/depot-floor-yellow-lining.webp",
+    "thumbUrl": "/uploads/media/library/depot-floor-yellow-lining.thumb.webp",
+    "mimeType": "image/webp",
+    "size": 254934,
+    "width": 960,
+    "height": 1280,
+    "alt": {
+      "en": "Bus depot floor with fresh yellow lane markings",
+      "ar": "أرضية مستودع الحافلات مع خطوط مسارات صفراء جديدة"
+    },
+    "folder": "media/library",
+    "tag": "flooring"
+  },
+  {
+    "key": "interior-corridor-finish",
+    "filename": "interior-corridor-finish.webp",
+    "url": "/uploads/media/library/interior-corridor-finish.webp",
+    "thumbUrl": "/uploads/media/library/interior-corridor-finish.thumb.webp",
+    "mimeType": "image/webp",
+    "size": 57152,
+    "width": 960,
+    "height": 1280,
+    "alt": {
+      "en": "Completed interior corridor with white wall finish",
+      "ar": "ممر داخلي مكتمل بتشطيب جداري أبيض"
+    },
+    "folder": "media/library",
+    "tag": "painting"
+  },
+  {
+    "key": "warehouse-exterior-coating",
+    "filename": "warehouse-exterior-coating.webp",
+    "url": "/uploads/media/library/warehouse-exterior-coating.webp",
+    "thumbUrl": "/uploads/media/library/warehouse-exterior-coating.thumb.webp",
+    "mimeType": "image/webp",
+    "size": 198586,
+    "width": 960,
+    "height": 1280,
+    "alt": {
+      "en": "Warehouse exterior after protective coating works",
+      "ar": "الواجهة الخارجية لمستودع بعد أعمال الطلاء الواقي"
+    },
+    "folder": "media/library",
+    "tag": "painting"
+  },
+  {
+    "key": "workshop-yellow-line-marking",
+    "filename": "workshop-yellow-line-marking.webp",
+    "url": "/uploads/media/library/workshop-yellow-line-marking.webp",
+    "thumbUrl": "/uploads/media/library/workshop-yellow-line-marking.thumb.webp",
+    "mimeType": "image/webp",
+    "size": 194642,
+    "width": 960,
+    "height": 1280,
+    "alt": {
+      "en": "Industrial workshop floor with yellow safety line marking",
+      "ar": "أرضية ورشة صناعية مع خطوط أمان صفراء"
+    },
+    "folder": "media/library",
+    "tag": "flooring"
+  },
+  {
+    "key": "warehouse-shutters-exterior",
+    "filename": "warehouse-shutters-exterior.webp",
+    "url": "/uploads/media/library/warehouse-shutters-exterior.webp",
+    "thumbUrl": "/uploads/media/library/warehouse-shutters-exterior.thumb.webp",
+    "mimeType": "image/webp",
+    "size": 125236,
+    "width": 960,
+    "height": 1280,
+    "alt": {
+      "en": "Warehouse facade and roller shutters prepared for coating",
+      "ar": "واجهة المستودع والأبواب المتحركة الجاهزة للطلاء"
+    },
+    "folder": "media/library",
+    "tag": "painting"
+  },
+  {
+    "key": "service-corridor-green-epoxy",
+    "filename": "service-corridor-green-epoxy.webp",
+    "url": "/uploads/media/library/service-corridor-green-epoxy.webp",
+    "thumbUrl": "/uploads/media/library/service-corridor-green-epoxy.thumb.webp",
+    "mimeType": "image/webp",
+    "size": 169338,
+    "width": 960,
+    "height": 1280,
+    "alt": {
+      "en": "Service corridor finished with seamless green epoxy flooring",
+      "ar": "ممر خدمي بأرضية إيبوكسي خضراء ملساء"
+    },
+    "folder": "media/library",
+    "tag": "flooring"
+  },
+  {
+    "key": "villa-exterior-classical-finish",
+    "filename": "villa-exterior-classical-finish.webp",
+    "url": "/uploads/media/library/villa-exterior-classical-finish.webp",
+    "thumbUrl": "/uploads/media/library/villa-exterior-classical-finish.thumb.webp",
+    "mimeType": "image/webp",
+    "size": 102316,
+    "width": 960,
+    "height": 1280,
+    "alt": {
+      "en": "Classical villa facade with fresh exterior paint finish",
+      "ar": "واجهة فيلا كلاسيكية بتشطيب دهان خارجي جديد"
+    },
+    "folder": "media/library",
+    "tag": "painting"
+  },
+  {
+    "key": "loading-bay-floor-marking",
+    "filename": "loading-bay-floor-marking.webp",
+    "url": "/uploads/media/library/loading-bay-floor-marking.webp",
+    "thumbUrl": "/uploads/media/library/loading-bay-floor-marking.thumb.webp",
+    "mimeType": "image/webp",
+    "size": 134514,
+    "width": 960,
+    "height": 1280,
+    "alt": {
+      "en": "Loading bay with floor marking and protective coating",
+      "ar": "منطقة تحميل مع علامات أرضية وطلاء واقٍ"
+    },
+    "folder": "media/library",
+    "tag": "flooring"
+  },
+  {
+    "key": "interior-room-white-finish",
+    "filename": "interior-room-white-finish.webp",
+    "url": "/uploads/media/library/interior-room-white-finish.webp",
+    "thumbUrl": "/uploads/media/library/interior-room-white-finish.thumb.webp",
+    "mimeType": "image/webp",
+    "size": 22030,
+    "width": 960,
+    "height": 1280,
+    "alt": {
+      "en": "Interior room handed over with a smooth white wall finish",
+      "ar": "غرفة داخلية مسلّمة بتشطيب جداري أبيض ناعم"
+    },
+    "folder": "media/library",
+    "tag": "painting"
+  },
+  {
+    "key": "mall-ev-charging-bay",
+    "filename": "mall-ev-charging-bay.webp",
+    "url": "/uploads/media/library/mall-ev-charging-bay.webp",
+    "thumbUrl": "/uploads/media/library/mall-ev-charging-bay.thumb.webp",
+    "mimeType": "image/webp",
+    "size": 211192,
+    "width": 960,
+    "height": 1280,
+    "alt": {
+      "en": "Mall basement electric vehicle bay marked ELECTRIC VEHICLE ONLY",
+      "ar": "موقف سيارات كهربائية في قبو المركز التجاري مخصص للسيارات الكهربائية فقط"
+    },
+    "folder": "media/library",
+    "tag": "ev-parking"
+  },
+  {
+    "key": "mall-ev-charging-bay-wide",
+    "filename": "mall-ev-charging-bay-wide.webp",
+    "url": "/uploads/media/library/mall-ev-charging-bay-wide.webp",
+    "thumbUrl": "/uploads/media/library/mall-ev-charging-bay-wide.thumb.webp",
+    "mimeType": "image/webp",
+    "size": 163180,
+    "width": 960,
+    "height": 1280,
+    "alt": {
+      "en": "Wide view of mall electric vehicle charging bays in green epoxy",
+      "ar": "منظر واسع لمواقف شحن السيارات الكهربائية بطلاء إيبوكسي أخضر"
+    },
+    "folder": "media/library",
+    "tag": "ev-parking"
+  },
+  {
+    "key": "basement-ev-parking-court",
+    "filename": "basement-ev-parking-court.webp",
+    "url": "/uploads/media/library/basement-ev-parking-court.webp",
+    "thumbUrl": "/uploads/media/library/basement-ev-parking-court.thumb.webp",
+    "mimeType": "image/webp",
+    "size": 160486,
+    "width": 960,
+    "height": 1280,
+    "alt": {
+      "en": "Basement electric vehicle parking court with epoxy coating and markings",
+      "ar": "ساحة مواقف السيارات الكهربائية في القبو بطلاء إيبوكسي وعلامات أرضية"
+    },
+    "folder": "media/library",
+    "tag": "ev-parking"
+  },
+  {
+    "key": "basement-ev-parking-bays",
+    "filename": "basement-ev-parking-bays.webp",
+    "url": "/uploads/media/library/basement-ev-parking-bays.webp",
+    "thumbUrl": "/uploads/media/library/basement-ev-parking-bays.thumb.webp",
+    "mimeType": "image/webp",
+    "size": 162394,
+    "width": 960,
+    "height": 1280,
+    "alt": {
+      "en": "Freshly coated basement electric vehicle parking bays",
+      "ar": "مواقف سيارات كهربائية حديثة الطلاء في القبو"
+    },
+    "folder": "media/library",
+    "tag": "ev-parking"
+  },
+  {
+    "key": "rta-office-building-facade",
+    "filename": "rta-office-building-facade.webp",
+    "url": "/uploads/media/library/rta-office-building-facade.webp",
+    "thumbUrl": "/uploads/media/library/rta-office-building-facade.thumb.webp",
+    "mimeType": "image/webp",
+    "size": 117048,
+    "width": 960,
+    "height": 1280,
+    "alt": {
+      "en": "Completed office building facade after exterior painting",
+      "ar": "واجهة مبنى مكاتب مكتملة بعد أعمال الدهان الخارجي"
+    },
+    "folder": "media/library",
+    "tag": "painting"
+  }
+]

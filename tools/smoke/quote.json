@@ -1,0 +1,12 @@
+{
+  "name": "Test User",
+  "phone": "+971500000000",
+  "email": "t@example.com",
+  "company": "Smoke Test LLC",
+  "services": ["epoxy-flooring", "line-marking"],
+  "propertyType": "commercial",
+  "emirate": "Dubai",
+  "area": "800 m²",
+  "message": "Need 800 sqm epoxy in an Al Quoz warehouse.",
+  "locale": "en"
+}

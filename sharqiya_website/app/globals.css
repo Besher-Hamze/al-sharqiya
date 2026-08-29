@@ -1,0 +1,425 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  /* Brand gold — sampled from the Al-Sharqiya logo (#daad49). */
+  --color-gold-50: #fdfaf1;
+  --color-gold-100: #faf2dc;
+  --color-gold-200: #f4e3b3;
+  --color-gold-300: #eccd82;
+  --color-gold-400: #e3b658;
+  --color-gold-500: #daad49;
+  --color-gold-600: #c1913a;
+  --color-gold-700: #9e7231;
+  --color-gold-800: #7d5a2e;
+  --color-gold-900: #664a29;
+  --color-gold-950: #3a2814;
+
+  /* Graphite — the dark counterweight used for heroes, footer and overlays. */
+  --color-graphite-50: #f6f7f8;
+  --color-graphite-100: #eceef1;
+  --color-graphite-200: #d6dade;
+  --color-graphite-300: #b2bac2;
+  --color-graphite-400: #87919c;
+  --color-graphite-500: #68727d;
+  --color-graphite-600: #525b65;
+  --color-graphite-700: #414951;
+  --color-graphite-800: #2f353b;
+  --color-graphite-900: #1f2429;
+  --color-graphite-950: #12161a;
+
+  /* Warm neutral ink for body copy on light surfaces. */
+  --color-ink-50: #f8f7f5;
+  --color-ink-100: #eeece8;
+  --color-ink-200: #dcd8d1;
+  --color-ink-300: #bcb5aa;
+  --color-ink-400: #948b7e;
+  --color-ink-500: #776e62;
+  --color-ink-600: #61594f;
+  --color-ink-700: #4f4941;
+  --color-ink-800: #423d37;
+  --color-ink-900: #302c28;
+  --color-ink-950: #1c1a17;
+
+  /* Page surfaces. */
+  --color-sand: #faf8f4;
+  --color-bone: #f2ede4;
+
+  --color-success: #16a34a;
+  --color-warning: #d97706;
+  --color-error: #dc2626;
+
+  --font-sans: var(--font-inter), var(--font-arabic), ui-sans-serif, system-ui,
+    sans-serif;
+  --font-display: var(--font-sora), var(--font-arabic), ui-sans-serif,
+    system-ui, sans-serif;
+  --font-arabic: var(--font-plex-arabic), ui-sans-serif, system-ui, sans-serif;
+
+  --shadow-soft: 0 2px 20px -2px rgb(28 26 23 / 0.08);
+  --shadow-lift: 0 14px 44px -10px rgb(28 26 23 / 0.22);
+  --shadow-glow: 0 0 40px -6px rgb(218 173 73 / 0.42);
+  --shadow-inset-gold: inset 0 1px 0 0 rgb(244 227 179 / 0.35);
+
+  --animate-float: float 8s ease-in-out infinite;
+  --animate-float-slow: float 13s ease-in-out infinite;
+  --animate-marquee: marquee 38s linear infinite;
+  --animate-shimmer: shimmer 3s ease-in-out infinite;
+  --animate-ken-burns: ken-burns 20s ease-out infinite alternate;
+  --animate-glow-pulse: glow-pulse 5s ease-in-out infinite;
+  --animate-scan: scan 3.5s ease-in-out infinite;
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-16px) rotate(1.5deg);
+    }
+  }
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes shimmer {
+    0% {
+      background-position: 200% center;
+    }
+    100% {
+      background-position: -200% center;
+    }
+  }
+
+  @keyframes ken-burns {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.07);
+    }
+  }
+
+  @keyframes glow-pulse {
+    0%,
+    100% {
+      opacity: 0.35;
+    }
+    50% {
+      opacity: 0.7;
+    }
+  }
+
+  @keyframes scan {
+    0%,
+    100% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(100%);
+      opacity: 1;
+    }
+  }
+}
+
+:root {
+  --background: var(--color-sand);
+  --foreground: #1c1a17;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+[dir="rtl"] body,
+html[lang="ar"] body {
+  font-family: var(--font-arabic);
+}
+
+html[lang="ar"] .font-display {
+  font-family: var(--font-arabic);
+  letter-spacing: 0;
+}
+
+/* Latin display type is set tight; Arabic needs its natural tracking. */
+html[lang="ar"] .tracking-brand {
+  letter-spacing: 0;
+}
+
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+}
+
+::selection {
+  background: var(--color-gold-200);
+  color: var(--color-gold-950);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-gold-300) transparent;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-gold-500);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ── Brand utilities ── */
+
+.text-gradient-gold {
+  background: linear-gradient(
+    115deg,
+    var(--color-gold-200),
+    var(--color-gold-400) 45%,
+    var(--color-gold-600)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.glass {
+  background: rgb(250 248 244 / 0.75);
+  backdrop-filter: blur(16px) saturate(1.3);
+  -webkit-backdrop-filter: blur(16px) saturate(1.3);
+}
+
+.glass-dark {
+  background: rgb(18 22 26 / 0.55);
+  backdrop-filter: blur(20px) saturate(1.4);
+  -webkit-backdrop-filter: blur(20px) saturate(1.4);
+}
+
+/* Film grain, keeps large dark areas from banding */
+.noise-overlay::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 128px 128px;
+}
+
+/* Card that reveals a gold hairline border on hover */
+.brand-card {
+  position: relative;
+  border-radius: 1.25rem;
+  background: white;
+  transition:
+    transform 0.5s cubic-bezier(0.21, 0.65, 0.32, 0.99),
+    box-shadow 0.5s ease;
+}
+
+.brand-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(
+    135deg,
+    rgb(218 173 73 / 0.55),
+    rgb(218 173 73 / 0.12) 45%,
+    rgb(31 36 41 / 0.25)
+  );
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+
+.brand-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lift);
+}
+
+.brand-card:hover::before {
+  opacity: 1;
+}
+
+/* Centred rule with gold fade, used above section headings */
+.gold-rule {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.gold-rule::before,
+.gold-rule::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--color-gold-400),
+    transparent
+  );
+}
+
+/* Ambient section backgrounds */
+.section-mesh {
+  background:
+    radial-gradient(
+      ellipse 80% 60% at 8% 0%,
+      rgb(218 173 73 / 0.09),
+      transparent
+    ),
+    radial-gradient(
+      ellipse 60% 50% at 92% 100%,
+      rgb(31 36 41 / 0.05),
+      transparent
+    ),
+    var(--color-sand);
+}
+
+.section-mesh-bone {
+  background:
+    radial-gradient(
+      ellipse 70% 50% at 50% 0%,
+      rgb(218 173 73 / 0.13),
+      transparent
+    ),
+    var(--color-bone);
+}
+
+.section-dark {
+  background:
+    radial-gradient(
+      ellipse 70% 55% at 15% 0%,
+      rgb(218 173 73 / 0.14),
+      transparent
+    ),
+    linear-gradient(
+      160deg,
+      var(--color-graphite-950),
+      var(--color-graphite-900) 55%,
+      var(--color-graphite-950)
+    );
+}
+
+/* Blueprint grid — a quiet nod to the trade, used on dark panels */
+.blueprint-grid {
+  background-image:
+    linear-gradient(rgb(255 255 255 / 0.5) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(255 255 255 / 0.5) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+/* Sweeping highlight for primary CTAs */
+.btn-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-shimmer::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    105deg,
+    transparent 40%,
+    rgb(255 255 255 / 0.28) 50%,
+    transparent 60%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 3s ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* Double-framed image treatment for editorial blocks */
+.editorial-frame {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  box-shadow: var(--shadow-lift);
+}
+
+.editorial-frame::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  border-radius: inherit;
+  border: 1px solid rgb(255 255 255 / 0.18);
+  pointer-events: none;
+}
+
+.editorial-frame::after {
+  content: "";
+  position: absolute;
+  inset: 12px;
+  z-index: 2;
+  border-radius: calc(1.5rem - 12px);
+  border: 1px solid rgb(218 173 73 / 0.4);
+  pointer-events: none;
+}
+
+/* Fades a marquee/scroller into the page on both edges */
+.edge-fade {
+  mask-image: linear-gradient(
+    90deg,
+    transparent,
+    black 8%,
+    black 92%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent,
+    black 8%,
+    black 92%,
+    transparent
+  );
+}
+
+/* Rich text rendered from the CMS */
+.prose-brand p {
+  margin-bottom: 1.15rem;
+  line-height: 1.8;
+}
+
+.prose-brand p:last-child {
+  margin-bottom: 0;
+}
+
+.prose-brand strong {
+  font-weight: 600;
+  color: var(--color-ink-950);
+}
