@@ -48,7 +48,13 @@ Quote `ADMIN_PASSWORD` in `.env` — an unquoted `#` starts a comment.
 
 ## Production (PM2, no domain)
 
-See [DEPLOY.md](DEPLOY.md). From the repo root after build:
+Server: `http://217.76.56.247` — see [DEPLOY.md](DEPLOY.md).
+
+| Website | http://217.76.56.247:3018/en |
+| Dashboard | http://217.76.56.247:3019 |
+| API | http://217.76.56.247:3020/api/docs |
+
+From the repo root after build:
 
 ```bash
 pm2 start ecosystem.config.cjs

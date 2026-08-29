@@ -1,12 +1,10 @@
-# Production PM2 — no domain (open by server IP)
+# Production PM2 — http://217.76.56.247 (no domain)
 
-Replace `SERVER_IP` with the VPS public IP before building the Next apps.
-
-| App | Port |
-|---|---|
-| Website | **3018** |
-| Dashboard | **3019** |
-| API | **3020** |
+| App | Port | URL |
+|---|---|---|
+| Website | **3018** | http://217.76.56.247:3018/en |
+| Dashboard | **3019** | http://217.76.56.247:3019 |
+| API | **3020** | http://217.76.56.247:3020/api/docs |
 
 ```bash
 # --- once on the server ---
@@ -23,11 +21,8 @@ cd al-sharqiya
 cd sharqiya_backend
 cp .env.example .env
 nano .env
-# PORT=3020
-# MONGODB_URI=mongodb://127.0.0.1:27017/sharqiya
-# JWT_ACCESS_SECRET / JWT_REFRESH_SECRET = long random hex
-# COOKIE_SECURE=false
-# CORS_ORIGINS=http://SERVER_IP:3018,http://SERVER_IP:3019
+# set JWT_ACCESS_SECRET and JWT_REFRESH_SECRET (long random hex)
+# CORS is already set for 217.76.56.247
 mkdir -p logs
 npm ci
 npm run seed
@@ -35,26 +30,14 @@ npm run build
 
 # --- website (NEXT_PUBLIC_* are baked at build time) ---
 cd ../sharqiya_website
-cat > .env.production <<'EOF'
-API_URL=http://127.0.0.1:3020
-NEXT_PUBLIC_API_URL=http://SERVER_IP:3020
-NEXT_PUBLIC_ASSET_URL=http://SERVER_IP:3020
-NEXT_PUBLIC_SITE_URL=http://SERVER_IP:3018
-EOF
-# then replace SERVER_IP
-nano .env.production
+cp .env.production.example .env.production
 mkdir -p logs
 npm ci
 npm run build
 
 # --- dashboard ---
 cd ../sharqiya_dashboard
-cat > .env.production <<'EOF'
-NEXT_PUBLIC_API_URL=http://SERVER_IP:3020/api/v1
-NEXT_PUBLIC_ASSET_URL=http://SERVER_IP:3020
-NEXT_PUBLIC_WEBSITE_URL=http://SERVER_IP:3018/en
-EOF
-nano .env.production
+cp .env.production.example .env.production
 mkdir -p logs
 npm ci
 npm run build
@@ -68,9 +51,6 @@ pm2 startup
 
 Open firewall ports `3018`, `3019`, `3020`.
 
-- Website: `http://SERVER_IP:3018/en`
-- Dashboard: `http://SERVER_IP:3019`
-- API docs: `http://SERVER_IP:3020/api/docs`
-- Login: `admin@alsharqiya.ae` / `Sharqiya#2026`
+Login: `admin@alsharqiya.ae` / `Sharqiya#2026`
 
 If you change `NEXT_PUBLIC_*`, rebuild that app then `pm2 restart sharqiya-website` / `sharqiya-dashboard`.
