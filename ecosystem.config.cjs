@@ -10,7 +10,7 @@ module.exports = {
       exec_mode: "fork",
       env: {
         NODE_ENV: "production",
-        PORT: 3020,
+        PORT: 3072,
       },
       max_memory_restart: "512M",
       error_file: "./logs/error.log",
@@ -23,15 +23,15 @@ module.exports = {
     {
       name: "sharqiya-website",
       script: "node_modules/next/dist/bin/next",
-      args: "start -p 3018 -H 0.0.0.0",
+      args: "start -p 3070 -H 0.0.0.0",
       cwd: path.join(__dirname, "sharqiya_website"),
       instances: 1,
       exec_mode: "fork",
       env: {
         NODE_ENV: "production",
-        PORT: 3018,
+        PORT: 3070,
         HOSTNAME: "0.0.0.0",
-        API_URL: "http://127.0.0.1:3020",
+        API_URL: "http://127.0.0.1:3072",
       },
       max_memory_restart: "768M",
       error_file: "./logs/error.log",
@@ -44,13 +44,13 @@ module.exports = {
     {
       name: "sharqiya-dashboard",
       script: "node_modules/next/dist/bin/next",
-      args: "start -p 3019 -H 0.0.0.0",
+      args: "start -p 3071 -H 0.0.0.0",
       cwd: path.join(__dirname, "sharqiya_dashboard"),
       instances: 1,
       exec_mode: "fork",
       env: {
         NODE_ENV: "production",
-        PORT: 3019,
+        PORT: 3071,
         HOSTNAME: "0.0.0.0",
       },
       max_memory_restart: "768M",

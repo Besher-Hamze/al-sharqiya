@@ -27,7 +27,7 @@ export function byOrder<T extends { order?: number }>(items: T[]): T[] {
 }
 
 export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3018";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3070";
 
 export const PUBLIC_API_URL =
-  process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:3020";
+  process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:3072";

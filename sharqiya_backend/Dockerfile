@@ -18,5 +18,5 @@ RUN apt-get update \
 COPY package.json package-lock.json ./
 RUN npm ci --omit=dev
 COPY --from=builder /app/dist ./dist
-EXPOSE 3020
+EXPOSE 3072
 CMD ["node", "dist/main.js"]

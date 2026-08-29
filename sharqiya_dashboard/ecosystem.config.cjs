@@ -3,13 +3,13 @@ module.exports = {
     {
       name: "sharqiya-dashboard",
       script: "node_modules/next/dist/bin/next",
-      args: "start -p 3019 -H 0.0.0.0",
+      args: "start -p 3071 -H 0.0.0.0",
       cwd: __dirname,
       instances: 1,
       exec_mode: "fork",
       env: {
         NODE_ENV: "production",
-        PORT: 3019,
+        PORT: 3071,
         HOSTNAME: "0.0.0.0",
       },
       max_memory_restart: "768M",

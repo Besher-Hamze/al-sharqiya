@@ -2,9 +2,9 @@
 
 | App | Port | URL |
 |---|---|---|
-| Website | **3018** | http://217.76.56.247:3018/en |
-| Dashboard | **3019** | http://217.76.56.247:3019 |
-| API | **3020** | http://217.76.56.247:3020/api/docs |
+| Website | **3070** | http://217.76.56.247:3070/en |
+| Dashboard | **3071** | http://217.76.56.247:3071 |
+| API | **3072** | http://217.76.56.247:3072/api/docs |
 
 ```bash
 # --- once on the server ---
@@ -49,7 +49,7 @@ pm2 save
 pm2 startup
 ```
 
-Open firewall ports `3018`, `3019`, `3020`.
+Open firewall ports `3070`, `3071`, `3072`.
 
 Login: `admin@alsharqiya.ae` / `Sharqiya#2026`
 

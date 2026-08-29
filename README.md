@@ -4,9 +4,9 @@ Website, admin dashboard, and REST API for Al-Sharqiya (est. 1986, Al Ain, UAE).
 
 | App | Stack | Port |
 |---|---|---|
-| `sharqiya_website` | Next.js 16, next-intl, Tailwind v4 | **3018** |
-| `sharqiya_dashboard` | Next.js 16, TanStack Query, Zustand | **3019** |
-| `sharqiya_backend` | NestJS 11, MongoDB, JWT | **3020** |
+| `sharqiya_website` | Next.js 16, next-intl, Tailwind v4 | **3070** |
+| `sharqiya_dashboard` | Next.js 16, TanStack Query, Zustand | **3071** |
+| `sharqiya_backend` | NestJS 11, MongoDB, JWT | **3072** |
 
 Languages: English (`/en`) and Arabic (`/ar`, RTL). Brand gold: `#DAAD49`.
 
@@ -40,19 +40,19 @@ Quote `ADMIN_PASSWORD` in `.env` — an unquoted `#` starts a comment.
 
 | | |
 |---|---|
-| Website | http://localhost:3018/en |
-| Dashboard | http://localhost:3019 |
-| API | http://localhost:3020/api/v1 |
-| Swagger | http://localhost:3020/api/docs |
+| Website | http://localhost:3070/en |
+| Dashboard | http://localhost:3071 |
+| API | http://localhost:3072/api/v1 |
+| Swagger | http://localhost:3072/api/docs |
 | Admin login | `admin@alsharqiya.ae` / `Sharqiya#2026` |
 
 ## Production (PM2, no domain)
 
 Server: `http://217.76.56.247` — see [DEPLOY.md](DEPLOY.md).
 
-| Website | http://217.76.56.247:3018/en |
-| Dashboard | http://217.76.56.247:3019 |
-| API | http://217.76.56.247:3020/api/docs |
+| Website | http://217.76.56.247:3070/en |
+| Dashboard | http://217.76.56.247:3071 |
+| API | http://217.76.56.247:3072/api/docs |
 
 From the repo root after build:
 
@@ -73,10 +73,10 @@ docker compose --profile seed run --rm seed
 
 | | |
 |---|---|
-| Website (direct) | http://localhost:3018 |
+| Website (direct) | http://localhost:3070 |
 | Website (NGINX) | http://localhost |
-| Dashboard | http://localhost:3019 or http://localhost:8081 |
-| API | http://localhost:3020 |
+| Dashboard | http://localhost:3071 or http://localhost:8081 |
+| API | http://localhost:3072 |
 
 Browser-facing `NEXT_PUBLIC_*` URLs are baked at **image build** time. After changing them, rebuild the website and dashboard images.
 

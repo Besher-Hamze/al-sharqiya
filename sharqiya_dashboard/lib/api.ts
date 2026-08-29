@@ -4,10 +4,10 @@ import axios, { AxiosError, type InternalAxiosRequestConfig } from "axios";
 import { useAuthStore } from "@/lib/stores/auth-store";
 
 export const API_BASE =
-  process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:3020/api/v1";
+  process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:3072/api/v1";
 
 export const ASSET_BASE =
-  process.env.NEXT_PUBLIC_ASSET_URL ?? "http://localhost:3020";
+  process.env.NEXT_PUBLIC_ASSET_URL ?? "http://localhost:3072";
 
 export function assetUrl(path?: string | null): string {
   if (!path) return "";

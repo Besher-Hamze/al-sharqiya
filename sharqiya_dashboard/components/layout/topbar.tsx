@@ -17,7 +17,7 @@ export function Topbar({ onOpenMobile }: { onOpenMobile: () => void }) {
   const menuRef = useRef<HTMLDivElement>(null);
 
   const websiteUrl =
-    process.env.NEXT_PUBLIC_WEBSITE_URL ?? "http://localhost:3018/en";
+    process.env.NEXT_PUBLIC_WEBSITE_URL ?? "http://localhost:3070/en";
 
   useEffect(() => {
     if (!menuOpen) return;

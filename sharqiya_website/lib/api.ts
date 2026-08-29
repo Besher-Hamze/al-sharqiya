@@ -13,7 +13,7 @@ import type {
   Testimonial,
 } from "./types";
 
-const API_URL = process.env.API_URL ?? "http://localhost:3020";
+const API_URL = process.env.API_URL ?? "http://localhost:3072";
 const REVALIDATE_SECONDS = 60;
 const IS_DEV = process.env.NODE_ENV === "development";
 
