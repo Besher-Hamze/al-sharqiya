@@ -18,7 +18,6 @@ export function Hero({
   secondaryCta,
   slides,
   phone,
-  stats,
 }: {
   eyebrow: string;
   titleLine1: string;
@@ -29,7 +28,6 @@ export function Hero({
   /** Absolute image URLs. */
   slides: string[];
   phone: string;
-  stats: { value: string; label: string }[];
 }) {
   const reduce = useReducedMotion();
   const [index, setIndex] = useState(0);
@@ -133,29 +131,6 @@ export function Hero({
             </a>
           </div>
         </motion.div>
-
-        {/* Key figures, doubling as the visual base of the hero */}
-        <motion.dl
-          initial={reduce ? false : { opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{
-            duration: 0.9,
-            delay: 0.25,
-            ease: [0.21, 0.65, 0.32, 0.99],
-          }}
-          className="mt-14 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/10 backdrop-blur-md lg:grid-cols-4"
-        >
-          {stats.map((stat) => (
-            <div key={stat.label} className="bg-graphite-950/40 px-5 py-5">
-              <dt className="tracking-brand text-[10px] font-bold uppercase tracking-[0.18em] text-gold-300/90">
-                {stat.label}
-              </dt>
-              <dd className="mt-1.5 font-display text-2xl font-semibold text-white sm:text-[1.75rem]">
-                {stat.value}
-              </dd>
-            </div>
-          ))}
-        </motion.dl>
       </div>
 
       {/* Slide indicators */}

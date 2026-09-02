@@ -91,10 +91,6 @@ export default async function HomePage({
         secondaryCta={loc(home.hero.secondaryCta, locale)}
         slides={home.hero.slides.map((slide) => mediaUrl(slide))}
         phone={settings.contact.phone}
-        stats={home.stats.map((stat) => ({
-          value: stat.value,
-          label: loc(stat.label, locale),
-        }))}
       />
 
       {/* Intro — company statement beside a portrait image */}
